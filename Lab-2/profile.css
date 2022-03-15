@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+
+.profile_column{
+    width: 50%;
+    float: left;
+}
+
+.profile_img{
+    border-radius:50%;
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+}
+
+.inbox_card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: rgba(238, 237, 237, 0.933);
+  }
+  .setting_tutor_card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 145px;
+    height: 105px;
+    background-color: rgba(238, 237, 237, 0.933);
+  }
+  .inbox_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .middle_bar {
+    margin-top: 20px;
+    background-color: #f1f6f5;
+    height: 40px;
+    
+  }
