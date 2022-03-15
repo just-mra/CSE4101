@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+  
+  .column1 {
+    float: left;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left1 {
+    width: 40%;
+  }
+  
+  .right1 {
+    width: 60%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
