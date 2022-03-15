@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 500px; 
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+}
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 500px; 
+}
+.col1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 150px; 
+}
+.col2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 100px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#fname{
+  height: 40px;
+  width: 400px;
+}
+#lname{
+  height: 40px;
+  width: 400px;
+}
+#msg{
+  height: 200px;
+  width: 405px;
+}
+.btn{
+  margin-left: 250px;
+}
+</style>
+	</head>
+	<body>
+    <div class="row"style="background-color:pink;border-bottom:2px black solid;border-right:2px black solid">
+      <div class="col1">
+          <img src="logo.png" alt="" style="height:120px;width:250px;margin-left:80px">
+      </div>
+      <div class="col2" style="text-align:center;font-size:50px">
+        <h4>Title of the website</h4>
+      </div>
+    </div>
+	
+		
+	<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+    <p style="color:blue;margin-left:50px;margin-top:80px;">Menu</p>
+    <a href="page1.html"><p style="color:blue;margin-left:50px;">Home</p></a>
+    <p style="color:blue;margin-left:50px;">Portfolio</p>
+    <p style="color:blue;margin-left:50px;">CV</p>
+    <p style="color:blue;margin-left:50px;">Send message</p>
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    <form action="" style="margin-top:80px;margin-left:50px;">
+  <label for="name">Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Email:</label>
+  <input type="email" id="lname" name="lname"><br><br>
+  <label for="lname">MSG:</label>
+  <input type="text" id="msg" name="lname"><br><br>
+  <input type="submit" value="SEND" class="btn">
+</form>
+
+  </div>
+</div>
+
+
+	</body>
+</html>

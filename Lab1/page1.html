@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 500px; 
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+}
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 500px; 
+}
+.col1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 150px; 
+}
+.col2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  height: 100px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+	</head>
+	<body>
+
+	    <div class="row"style="background-color:pink;border-bottom:2px black solid;border-right:2px black solid">
+      <div class="col1">
+          <img src="logo.png" alt="" style="height:120px;width:250px;margin-left:80px">
+      </div>
+      <div class="col2" style="text-align:center;font-size:50px">
+        <h4>Title of the website</h4>
+      </div>
+    </div>
+	<div class="row">
+  <div class="column1" style="background-color:#aaa;">
+    <p style="color:blue;margin-left:50px;margin-top:80px;">Menu</p>
+    <p style="color:blue;margin-left:50px;">Home</p>
+    <p style="color:blue;margin-left:50px;">Portfolio</p>
+    <p style="color:blue;margin-left:50px;">CV</p>
+    <a href="page2.html"><p style="color:blue;margin-left:50px;">Send message</p></a>
+  </div>
+  <div class="column2" style="background-color:#bbb;">
+    <h2 style="color:green;margin-left:50px;margin-top:50px;">Heading 1</h2>
+    <p style="margin-left:50px;margin-top:30px;"><b>The standard Lorem Ipsome,used since in 1960.</b></p>
+    <p style="margin-left:50px;padding:1px">This course aims to provide students a systematic approach to develop deep understanding of web technologies by providing experience with readily available tools. Students will be able to learn new technologies, analyse existing web applications/systems and design a new one efficiently after the course.</p>
+  </div>
+</div>
+
+
+	</body>
+</html>
