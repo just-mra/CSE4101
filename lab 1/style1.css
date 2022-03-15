@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}
+
+.body1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.div1 {
+    border: 4px;
+    border-color: black;
+    border-style: groove;
+    background-color:rgb(174, 245, 238);
+}
+
+.imo {
+    height: 90px;
+    width: 90px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+#head1 {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+
+.sideMenu {
+    border: 2px;
+    border-color: black;
+    border-style: groove;
+    float: left;
+    padding: 10px;
+    height: 768px;
+
+}
+
+#list {
+    position: relative;
+    left: 20px;
+}
+
+.description {
+    background-color:rgb(255, 219, 166);
+    float: left;
+    padding: 10px;
+    height: 768px;
+   
+}
