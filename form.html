@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 768px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .right {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div style="border: 3px solid black;">
+        <img src="/home/warhammer/Pictures/debian_icon.png" style="height: 100px; width: 100px;position: relative;left:50px;top: 50px;" alt="">
+        <h1 style="text-align:center; position: relative;bottom: 50px;">Title of this website</h1>
+    </div>
+    <div class="row">
+        <div class="column left"  style="border: 3px solid black; background-color:#aaa;">
+            <p style="position: relative;left: 20px;">Menu</p>
+            <p>Home</p>
+            <p>Portofolio</p>
+            <p>CV</p>
+            <p>Send Message</p>
+        </div>
+        <div class="column right" style="background-color:#bbb;">
+            <div>
+                <label for="">Name</label>
+                <input style="position: relative;left: 17px; width: 600px;"type="text">
+            </div>
+            <br>
+            <div>
+                <label for="">Email</label>
+                <input style="position: relative;left: 17px; width: 600px;" type="text">
+            </div>
+            <br>
+            <div>
+                <label style="position: relative; bottom: 75px;">Message</label>
+                <input style="height: 200px;width: 600px;" type="text">
+            </div>
+            <br>
+            <button style="position: relative; left: 250px;">Send</button>
+        </div>
+    </div>
+</body>
+
+</html>
