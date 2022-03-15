@@ -1,0 +1,171 @@
+.tbar {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px;
+    border-style: solid;
+    background-color: rgb(240, 255, 255);
+}
+
+.th {
+    padding-top: 50px;
+    padding-left: 500px;
+    font-size: 25pt;
+}
+
+.hbody {
+    display: flex;
+    position: absolute;
+}
+.hlist {
+    border-style: solid;
+    width: 300px;
+    height: 700px;
+    list-style: none;
+}
+
+li {
+    color: red;
+   padding-top: 20px;
+    font-size: 18pt;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.hcontent {
+    padding-top: 20px;
+    position: absolute;
+    margin-left: 300px;
+}
+.dphome {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border-color: rgb(211, 211, 211);
+    border-style: solid;
+}
+
+.inboxicon {
+    background-color: #bebebe;
+    height: 100px;
+    width: 220px;
+    margin-left: 1350px;
+    margin-top: -120px;
+}
+
+.inboximage {
+    width: 80px;
+    height: 50px;
+    padding-left: 70px;
+    padding-top: 15px;
+}
+
+.profileDetail {
+    padding-left: 200px;
+}
+.psetting {
+    background-color: #bebebe;
+    height: 100px;
+    width: 100px;
+    margin-left:1350px;
+    margin-top: -130px;
+}
+
+.psimage {
+    width: 50px;
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 15px;
+    
+
+}
+
+.tprofile {
+    background-color: #bebebe;
+    height: 100px;
+    width: 100px;
+    margin-left:1470px;
+    margin-top: -100px;
+
+}
+.tpimage {
+    width: 50px;
+    height: 50px;
+    padding-left: 25px;
+    padding-top: 15px;
+
+}
+
+.innernav {
+    background-color: rgb(211, 243, 243);
+    display: flex;
+    margin-left: 50px;
+    margin-top: 30px;
+    height: 40px;
+}
+
+.hitem {
+    display: grid;
+    grid-template-columns: 30px auto 100px;
+    margin-left: 50px;
+    grid-template-rows: 40px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+
+.chatbody {
+    border: 1px solid;
+    margin-top: 70px;
+    margin-left: 50px;
+    border-radius: 5px;
+    width: 1500px;
+    height: 500px;
+    
+}
+
+.sendchat {
+    border: 1px solid;
+    margin-top: 600px;
+    margin-left: -1401px;
+    border-radius: 5px;
+    width: 1300px;
+    height: 60px;
+    display: flex;
+    
+
+}
+
+
+
+.arrow-left {
+width: 0; 
+  height: 0; 
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  
+  border-right: 16px solid #5A99EE;
+
+  margin-left: 65px;
+  margin-top: -50px;
+  
+
+}
+
+
+.arrow-right {
+    width: 0; 
+      height: 0; 
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent;
+      
+      border-left: 16px solid #FC6D4C;
+    
+      margin-left: 1365px;
+      margin-top: -45px;
+      
+    
+    }
