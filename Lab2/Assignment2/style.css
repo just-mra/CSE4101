@@ -1,0 +1,109 @@
+.heading {
+  border: 5px outset black;
+  background-color: #E6FBEC;
+  text-align: center;
+  padding: 15px;
+}
+.menu_head{
+display: flex;
+}
+.menu {
+  border-top: 0px;
+  border-right: 5px outset black;
+  border-bottom: 5px outset black;
+  border-left: 5px outset black;
+  text-align: left;
+  padding-left: 20px;
+  float: left;
+  width: 30%;
+  color: red;
+  height: 500px;
+}
+.head2{
+  background-color: white;
+  text-align: left;
+  width: 70%;
+  padding-left: 50px;
+  height: 505px;
+}
+.head2_2{
+  padding: 10px;
+}
+.chat_heading{
+  height: 45px;
+  background-color: black ;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px 5px 0px 0px;
+}
+.chat{
+  border-left:    1px solid lightgray;
+  border-right:  1px solid lightgray; 
+  border-bottom: 1px solid lightgray;
+}
+.first{
+  display: flex;
+  padding-top: 20px;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  border-right: 30px solid #5A99EE;
+  border-bottom: 20px solid transparent;
+  margin-top: 20px;
+  margin-right: -10px;
+}
+.w1{
+  height: 70px;
+  width: 400px;
+  background-color: #5A99EE ;
+  color: white;
+  border-radius: 50px;
+}
+.second{
+  display: flex;
+  padding-left: 550px;
+}
+.w2{
+  height: 70px;
+  width: 200px;
+  background-color: #FC6D4C ;
+  color: white;
+  border-radius: 50px;
+}
+.triangle2{
+  width: 0;
+  height: 0;
+  border-left: 30px solid #FC6D4C;
+  border-bottom: 20px solid transparent;
+  margin-top: 20px;
+  margin-left: -10px;
+}
+.third{
+  display: flex;
+}
+.w3{
+  height: 70px;
+  width: 400px;
+  background-color: #5A99EE ;
+  color: white;
+  border-radius: 50px;
+}
+.fourth{
+  display: flex;
+  padding-left: 550px;
+}
+.w4{
+  height: 70px;
+  width: 200px;
+  background-color: #FC6D4C ;
+  color: white;
+  border-radius: 50px;
+}
+.chat_box{
+  height: 50px;
+  width: 800px;
+  background-color: #EBEFF2 ;
+  margin-left: 30px;
+  border-radius: 10px 10px;
+}
