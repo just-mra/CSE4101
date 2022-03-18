@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        header {
+            background-color: rgb(230, 251, 236);
+            padding: 30px;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 22px;
+            color: black;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav {
+            border: 2px solid black;
+            float: left;
+            width: 30%;
+            height: 400px;
+            /* only for demonstration, should be removed */
+            background: white;
+            padding: 20px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        nav ul li {
+            padding: 5px;
+        }
+        
+        nav ul li:first-child {
+            margin-left: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: red;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(239, 227, 175);
+            height: 400px;
+            /* only for demonstration, should be removed */
+        }
+        /* Clear floats after the columns */
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the footer */
+        
+        .head1 {
+            color: green;
+        }
+        
+        .p_tag {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .p_tag2 {
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .message {
+            margin-top: 50px;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 50%;
+            padding: 10px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            margin-left: 10px;
+            resize: vertical;
+        }
+        
+        .label {
+            font-size: 22px;
+            width: 200px;
+        }
+        
+        .text_area_class {
+            margin-left: 75px;
+        }
+        
+        .send_button {
+            font-size: 22px;
+            padding: 5px;
+            border-radius: 5px;
+            border-color: orangered;
+            border: 2px solid orangered;
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="header_class">
+                <header>
+                    <h2>Title Of the website</h2>
+                </header>
+            </div>
+
+            <section>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">CV</a></li>
+                            <li><a href="#">Send Message</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <article>
+                    <div style="margin-left: 75px;">
+                        <form action="">
+                            <div>
+                                <label class="label" for="">Name:</label>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label class="label" for="">Email:</label>
+                                <input type="text">
+                            </div>
+                            <label class="label" for="">Msg:</label>
+                            <div>
+                                <textarea class="text_area_class" name="demo" cols="30" rows="5"></textarea>
+                            </div>
+                            <div style="margin-left: 200px;">
+                                <button class="send_button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
