@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input form</title>
+
+</head>
+
+<body onload="javascript:swapElement()">
+    <div>
+        <input type="text" placeholder="Type something..." id="myInput">
+        <button type="button" onclick="checkName();">Get Value</button>
+        <div>
+            <br>
+            <textarea name="" id="textarea" cols="30" rows="2"></textarea>
+            <button onclick="getTextArea();">Submit</button>
+        </div>
+        <div>
+            <form action="/action_page.php">
+                <input type="checkbox" name="vehicle1" value="vanilla">
+                <label id="vanilla" style="color: blueviolet;"> item</label><br><br>
+
+                <input type="checkbox" name="vehicle2" value="chocolate">
+                <label id="chocolate" style="color: red;"> item</label><br><br>
+
+                <input type="checkbox" name="vehicle3" value="greentea">
+                <label id="greentea" style="color: blueviolet;"> item</label><br><br>
+
+                <input type="checkbox" name="vehicle3" value="strawberry">
+                <label id="strawberry" style="color: red;"> item</label><br><br>
+
+                <input type="checkbox" name="vehicle3" value="mango">
+                <label id="mango" style="color: blueviolet"> item</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <script>
+            function checkName() {
+                // Selecting the input element and get its value 
+                var inputVal = document.getElementById("myInput").value;
+
+                // Displaying the value
+                console.log(inputVal);
+                var twoPart = "-1";
+                for (let index = 0; index < inputVal.length; index++) {
+                    if (inputVal[0] != inputVal[0].toUpperCase()) {
+                        for (let i = 0; i < inputVal.length; i++) {
+                            inputVal[0] = inputVal.toUpperCase();
+                            if (inputVal[i] == " ") {
+                                inputVal[i + 1] = inputVal[i + 1].toUpperCase();
+                            }
+                        }
+                        window.alert(inputVal);
+                        break;
+                    }
+                    if (inputVal[index - 1] == " " && inputVal[0] != inputVal[0].toUpperCase()) {
+                        for (let i = 0; i < inputVal.length; i++) {
+                            inputVal[0] = inputVal.toUpperCase();
+                            if (inputVal[i] == " ") {
+                                inputVal[i + 1] = inputVal[i + 1].toUpperCase();
+                            }
+                        }
+                        window.alert(inputVal);
+                        break;
+                    }
+                    if (inputVal[i] == " ") {
+                        twoPart = "1";
+                    }
+                }
+
+
+                if (twoPart == "-1") {
+                    window.alert("ERROR");
+                }
+            }
+
+            function getTextArea() {
+                var value = document.getElementById("textarea").value;
+                console.log(value)
+            }
+
+            function swapElement() {
+                console.log("called swap");
+                var first = document.getElementById("vanilla");
+                var second = document.getElementById("chocolate");
+                var third = document.getElementById("greentea");
+                var fourth = document.getElementById("strawberry");
+                var fifth = document.getElementById("mango");
+                var sixth = document.getElementById("avocado");
+
+
+                const items = [first, second, third, fourth, fifth, sixth];
+
+                for (let i = 0; i < items.length; i++) {
+                    console.log(items[i]);
+                }
+
+                randomArray = [1, 2, 3, 4, 5];
+
+                shuffle(randomArray);
+                console.log(randomArray);
+                const flavors = ["vanilla", "chocolate", "greentea", "strawberry", "mango", "avocado"];
+                for (let index = 0; index < 6; index++) {
+
+                    items[index].innerHTML = flavors[randomArray[index]];
+                }
+            }
+            function randomInteger(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            function shuffle(array) {
+                let currentIndex = array.length, randomIndex;
+
+                // While there remain elements to shuffle...
+                while (currentIndex != 0) {
+
+                    // Pick a remaining element...
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex--;
+
+                    // And swap it with the current element.
+                    [array[currentIndex], array[randomIndex]] = [
+                        array[randomIndex], array[currentIndex]];
+                }
+
+                return array;
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
