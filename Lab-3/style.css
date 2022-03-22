@@ -1,0 +1,36 @@
+body{
+    padding-top: 50px;
+    margin-left: 200px;
+    
+}
+
+.alert {
+    padding: 5px;
+    color: red;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 380px;
+  }
+
+.name{
+    width: 380px;
+    height: 30px;
+    border: 2px solid tomato;
+    border-radius: 8px;
+    padding: 5px;
+}
+.address{
+    border: 2px solid tomato;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+div:nth-child(odd) {
+    color: red;
+    font-weight:bold;
+  }
+  
+div:nth-child(even) {
+    color: green;
+    font-weight: bold;
+}
