@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topbox {
+            border-style: solid;
+            margin-top: 0px;
+            background: rgb(134, 231, 215);
+            width: 100%;
+            height: 100px;
+        }
+
+        .topbox p {
+            margin: 40px;
+        }
+
+        .middle a {
+            color: red;
+            margin-left: 20px;
+
+
+
+        }
+
+        .middle {
+            background: azure;
+            border-style: solid;
+            width: 250px;
+            height: 500px;
+            padding-top: 50px;
+
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .mr {
+            width: 100%;
+            margin: 0px 0px;
+            background: rgb(255, 252, 97);
+        }
+
+        .mr form {
+            margin-left: 50px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mr input {
+            width: 500px;
+        }
+
+        .mr p {
+            margin-left: 50px;
+        }
+
+        .mr {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #name {
+            border-style: solid;
+        }
+
+        #email {
+            border-style: solid;
+        }
+
+        #message {
+            border-style: solid;
+        }
+
+        .msg {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form_text {
+            width: 50px;
+            margin-right: 15px;
+        }
+
+        .field {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbox">
+        <p style="text-align: center;"> Title of the Website</p>
+    </div>
+    <div class="content">
+        <div class="middle">
+            <a href="">Menu</a><br> <br>
+            <a href="">Home</a><br><br>
+            <a href="">Portfolio</a><br> <br>
+            <a href="">CV</a> <br><br>
+            <a href="">Send Message</a>
+        </div>
+        <div class="mr">
+            <form action="">
+                <div class="name">
+                    <label class="form_text" for="Name">Name</label>
+                    <input class="field" type="text" id="name" name="name">
+                </div>
+                <br><br>
+                <div class="mail">
+                    <label class="form_text" for="Email">Email</label>
+                    <input class="field" type="email" id="email" name="email">
+                </div>
+                <br><br>
+                <div class="msg">
+                    <div><label class="form_text" for="Message">Message</label></div>
+                    <div><textarea class="field" name="message" id="message" cols="30" rows="10"></textarea></div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

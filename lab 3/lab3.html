@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="myform" method="post" action="abc.jsp" onsubmit="validateform()" >
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <br>
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+            <input type="checkbox" id="vanilla" name="vanilla" value="Bike">
+            <label for="vanilla"> vanilla</label><br>
+            <input type="checkbox" id="chocolate" name="chocolate" value="Car">
+            <label for="chocolate">chocolate</label><br>
+            <input type="checkbox" id="green tea" name="green tea" value="Boat">
+            <label for="green tea">green tea</label><br><br>
+            <input type="submit" value="register"> 
+        </form>
+
+        <script>  
+            function validateform(){  
+            var name=document.myform.name.value;  
+            var address=document.myform.address.value;  
+            let validate = name => !name.match(/[\s_-]/g);
+            if (name==null || name==""){  
+              alert("Name can't be blank");  
+              return false;  
+            }
+            else if(validate(name)){
+                alert("name is not in correct form")
+            } 
+            else{
+                alert('in correct form')
+            } 
+            }  
+            </script>  
+    </body>
+    </html>

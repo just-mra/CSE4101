@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: azure;
+        }
+        .topbox {
+            border-style: solid;
+            margin-top: 0px;
+            background: rgb(134, 231, 215);
+            width: 100%;
+            
+        }
+
+        .topbox p {
+            margin: 40px;
+        }
+
+        .middle a {
+            color: red;
+            margin-left: 20px;
+
+
+
+        }
+
+        .middle {
+            background: azure;
+            border-style: solid;
+            width: 250px;
+            height: 100vh;
+            padding-top: 50px;
+
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            
+
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .profile {
+            width: 100%;
+            margin: 0px 0px;
+            background: azure;
+        }
+        img{
+            border-radius: 50%;
+        }
+        .profile_data{
+            float: left;
+            margin-top: 20px;
+            margin-left: 200px;
+            text-align: center;
+            float: left;
+        }
+
+        .profile_boxing{
+            float: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+           
+        }
+        .boxing_upper{
+            background-color: rgb(204, 206, 207);
+            width: 100%;
+            height: 80px;
+            margin: 10px;
+            padding-top: 10px;
+            justify-content: center;
+            box-shadow: 5px 5px 2px rgb(174, 176, 179);
+    
+        }
+        .boxing_lower{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+        .box1{
+            margin-right: 3px;
+            background-color: rgb(204, 206, 207);
+            width:100px ;
+            height: 80px;
+            padding-top: 10px;
+            box-shadow: 5px 5px 2px rgb(174, 176, 179);
+        }
+        .box2{
+            margin-left: 10px;
+            background-color: rgb(204, 206, 207);
+            width: 100px;
+            height: 80px;
+            padding-top: 10px;
+            box-shadow: 5px 5px 2px rgb(174, 176, 179);
+        }
+        .setting_card{
+            text-align: center;
+            width: 200px;
+            background-color: rgb(174, 176, 179);
+            box-shadow: 5px 5px 5px 0 rgb(174, 176, 179);
+        }
+        .description{
+            margin: 2em;
+        }
+
+        .header{
+            width: 100%;
+            height: 50px;
+            background: rgb(192, 223, 235);
+        }
+        .courses{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            background-color: rgb(56, 56, 247);
+            float: left;
+        }
+        .questions{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+
+            float: left;
+        }
+        .answer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <div class="topbox">
+        <p style="text-align: center;"><b style="font-size: larger;"> Title of the Website</b></p>
+    </div>
+    <div class="content">
+        <div class="middle">
+            <a href="">Menu</a><br> <br>
+            <a href="">Home</a><br><br>
+            <a href="">Portfolio</a><br> <br>
+            <a href="">CV</a> <br><br>
+            <a href="">Send Message</a>
+        </div>
+
+            <div class="details">
+                <div class="profile">
+                    <div class="profile_data">
+                     <img src="https://picsum.photos/seed/picsum/300/300" alt="pic" style="width:200px">
+                     <p><b>John doe</b></p>
+                     <p>johndoe45@gmail.com</p>
+                     <p>United State</p>
+                    </div>
+         
+                    <div class="profile_boxing">
+                        <div class="boxing_upper">
+                         <img style="width: 50px; height: 50px;" src="https://cdn-icons-png.flaticon.com/512/1159/1159627.png" alt="">
+                        </div>
+                        <div class="boxing_lower">
+                            <div class="box1">
+                             <img style="width: 50px; height: 50px;" src="https://cdn-icons-png.flaticon.com/512/1159/1159627.png" alt="">
+                            </div>
+                            <div class="box2">
+                             <img style="width: 50px; height: 50px;" src="https://cdn-icons-png.flaticon.com/512/1159/1159627.png" alt="">
+                            </div>
+                        </div>
+                     
+                    </div>
+                    
+                 </div>
+                 <div class="description">
+                     <div class="header">
+                         <div class="courses">
+                             <P>My Courses</P>
+                         </div>
+                         <div class="questions">
+                             <p>My Question</p>
+                         </div>
+                         <div class="answer">
+                             <p>My Answers</p>
+                         </div>
+                     </div>
+                     <table>
+                    
+                     </table>
+                 </div>
+            </div>
+        
+    </div>
+   </div>
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab2</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(230, 251, 236);
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+header img {
+    float: left;
+    height: 100px;
+    width: 150px;
+}
+
+nav {
+    border: 2px solid black;
+    float: left;
+    width: 20%;
+    height: 800px;
+    /* only for demonstration, should be removed */
+    background: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li:first-child {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+article {
+    float: left;
+    width: 80%;
+    background:azure ;
+    height: 800px;
+    padding: 20px;
+}
+
+.profile_img {
+    width: 50%;
+    float: left;
+}
+
+.profile_image {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile_settings {
+    width: 50%;
+    float: left;
+}
+
+.setting_card {
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    padding: 5px;
+}
+
+.tab_bar {
+    height: 100px;
+    background-color: rgb(235, 247, 255);
+}
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <div>
+            <div class="header_class">
+                <header>
+                    <img src="https://toppng.com/uploads/preview/javascript-html5-and-css-html-css-js-badge-115630076742dl7bdlbaf.png" alt="">
+                    <h2>Title Of the website</h2>
+                </header>
+            </div>
+            <section>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">CV</a></li>
+                            <li><a href="./send_message.html">Send Message</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <article>
+                    <div>
+                        <div>
+                            <div class="profile_img">
+                                <div style="text-align: center;">
+                                    <div>
+                                        <img class="profile_image" src="https://images.vexels.com/media/users/3/145908/raw/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg" alt="">
+                                    </div>
+                                    <div class="profile_info">
+                                        <p style="font-size: 24px; color: black;">Samiul Bashar</p>
+                                        <p style="font-size: 18px; color: black;">samiulcse2018@gmail.com</p>
+                                        <p style="font-size: 14px; color: black;">Jashore,Khulna</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile_settings" style="text-align: right;">
+                                <div>
+                                    <div style="width: 300px;">
+                                        <div class="setting_card" style="margin: 10px;">
+                                            <img style="width: 50px; height: 50px;" src="https://cdn-icons-png.flaticon.com/512/1159/1159627.png" alt="">
+                                            <p style="font-size: 14px; color: black;">You inbox (27)</p>
+                                        </div>
+                                    </div>
+                                    <div style="width: 300px;">
+                                        <div style="width: 50%; float: left;">
+                                            <div class="setting_card" style="margin: 10px;">
+                                                <img style="width: 50px; height: 50px;" src="https://cdn-icons-png.flaticon.com/512/1159/1159627.png" alt="">
+                                                <p style="font-size: 14px; color: black;">You inbox (27)</p>
+                                            </div>
+                                        </div>
+                                        <div style="width: 50%; float: left;">
+                                            <div class="setting_card" style="margin: 10px;">
+                                                <img style="width: 50px; height: 50px;" src="https://cdn-icons-png.flaticon.com/512/1159/1159627.png" alt="">
+                                                <p style="font-size: 14px; color: black;">You inbox (27)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab_bar">
+                            
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html> -->
