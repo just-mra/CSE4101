@@ -1,0 +1,11 @@
+.fom {
+    margin: 50px;
+}
+
+#one , #three , #five {
+color: rgba(47, 0, 255, 0.767);
+}
+
+#two , #four , #six{
+    color: rgb(238, 16, 9);
+}
