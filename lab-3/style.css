@@ -1,0 +1,25 @@
+.text{
+    /* text-align: center; */
+    width: 500px;
+    margin: auto;
+    background-color: aquamarine;
+    
+
+}
+#vanilla{
+    color: red;
+    background: red;
+    background-color: red;
+}
+input{
+    color: red;
+    /* background-color: red; */
+    /* background: red; */
+}
+div:nth-child(even){
+    color: blue;
+}
+div:nth-child(odd){
+    color: red;
+}
+
