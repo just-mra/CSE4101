@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <link
+      rel="stylesheet"
+      href="{% static 'registration_form/css/bootstrap.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'registration_form/css/home.css' %}"
+    />
+  </head>
+  <body class="container">
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+      <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+      <a class="navbar-brand" href="{% url 'register' %}">Register</a>
+    </nav>
+    <table class="table table-bordered mx-auto mt-5">
+      <tr>
+        <th>Full Name</th>
+        <th>Department</th>
+        <th>Roll</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+      {% for student in all_student %}
+      <tr>
+        <td>{{student.first_name}} {{student.last_name}}</td>
+        <td>{{student.department}}</td>
+        <td>{{student.roll}}</td>
+        <td>{{student.get_gender_display}}</td>
+        <td>{{student.email}}</td>
+        <td>
+          <div class="d-flex">
+            <button class="btn btn-warning mx-3">
+              <a
+                href="{% url 'update-student' student.id %}"
+                class="text-decoration-none"
+                >Edit</a
+              >
+            </button>
+
+            
+            <a
+                class="btn btn-danger"
+                href="{% url 'delete-student' student.id %}"
+                >Delete</a
+            >
+            
+
+            
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <script src="{% static 'registration_form/js/jquery.js' %}"></script>
+    <script src="{% static 'registration_form/js/popper.js' %}"></script>
+    <script src="{% static 'registration_form/js/bootstrap.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Student Information</title>
+  <link
+      rel="stylesheet"
+      href="{% static 'registration_form/css/bootstrap.css' %}"
+    />
+</head>
+<body class="container">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="{% url 'home' %}">Home</a>
+    <a class="navbar-brand" href="{% url 'register' %}">Register</a>
+  </nav>
+
+  <form action="" method="POST" id='update-form'>
+    {% csrf_token %} 
+    {{new_student.as_p}}
+
+    <input class="btn btn-primary" type="submit" value="Update" />
+
+    <a href="{% url 'home' %}" class="btn btn-danger">Cancel</a>
+  </form>
+
+  <script src="{% static 'registration_form/js/jquery.js' %}"></script>
+    <script src="{% static 'registration_form/js/popper.js' %}"></script>
+    <script src="{% static 'registration_form/js/bootstrap.js' %}"></script>
+
+</body>
+</html>
