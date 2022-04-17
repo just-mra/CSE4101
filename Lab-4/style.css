@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+input{
+    padding: 5px;
+    width: 220px;
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    
+}
+form{
+    background-color:rgb(245, 243, 243);
+    width: 60%;
+    padding-top: 1px;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius:3px;
+    padding-left: 30px;
+    background-image: url(img/bacground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+}
