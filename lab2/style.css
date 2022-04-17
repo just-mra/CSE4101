@@ -1,0 +1,462 @@
+body{
+    background-color: rgb(239, 228, 176);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    overflow-x: hidden;
+}
+/* 170128 header */
+.header_area{
+    margin-top: 0;
+    border-style: solid;
+    width: 100%;
+    height: 150px;
+    background-color:rgb(230, 251, 236);
+    
+}
+.header_area .logo_area{
+    float: left;
+}
+.header_area img{
+    margin: 30px;
+}
+.header_area .content{
+    float: right;
+    margin-top: 60px;
+    margin-right: 560px;
+    font-size: 25px;
+    font-weight: 400;
+}
+/* 170128 navbar*/
+.main_content{
+    background-color: #fff;
+    height: 110vh;
+}
+.main_content .nav{
+    margin-left: -295px;
+    float: left;
+    height: 110vh;
+    width: 15%;
+    position: static;
+    background-color: #fff;
+    border-style: solid;
+    border-top: none;
+    
+    
+}
+.main_content .nav ul{
+    list-style-type: none;
+}
+.main_content .nav ul li{
+    line-height: 3.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(253, 44, 44);
+}
+.main_content .nav ul li:first-child{
+    margin-left: 10px;
+}
+/*170128 lab1 part1 background*/
+.main_content .background #bold{
+    float: right;
+    margin-right: 450px;
+    font-weight: 600;
+}
+.main_content .background #light{
+    float: right;
+    margin-left: 270px;
+    font-weight: 400;
+    margin-top: -5px;
+    font-style: italic;
+
+}
+.main_content .background h3{
+    float: right;
+    margin-right: 1000px;
+    color: rgb(3, 167, 3);
+    margin-top: 100px;
+}
+/*170128 lab1 part2 form*/
+.main_content form label{
+    padding: 12px 12px 12px 12px;
+    display:inline-block;
+}
+.main_content form label:first-child{
+    
+}
+.main_content form #subject{
+    float: right;
+}
+.main_content form #fname{
+    float: right;
+}
+.main_content form #email{
+    float: right;
+}
+.main_content form #d{
+    padding: 24px;
+    float: left;
+    font-weight: 600;
+    margin-top: 25px; 
+}
+.main_content .contact-form{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.main_content .contact-form input[type=text],textarea {
+    width: 80%;
+    padding: 15px;
+    border: 3px solid black;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    background-color: rgb(239, 228, 176);
+}
+input[type=submit] {
+    background-color: rgb(239, 228, 176);
+    color: rgb(81, 161, 0);
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 269px;
+    margin-right: 108px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 3px solid orangered;
+    border-radius: 10px;
+}
+form{
+    padding-top: 45px;
+}
+a{
+    text-decoration: none;
+    color: rgb(253, 44, 44);
+}
+/*170128 lab2 part1*/
+.main{
+    width: 58%;
+    margin: 0 auto;
+    margin-left: 35%;
+    padding: 5px;
+    
+}
+.main .profile p{
+    width: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -25px;
+    
+}
+.main .profile h3{
+    width: 18%;
+    margin: 0;
+}
+.profile img{
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.settings{
+    float: right;
+    margin-top: -215px;
+    width: 45%;
+}
+/*170128*/
+.inbox{
+    background-color: #EAEAEA;
+    margin: 25px 70px;
+    width: 310px;
+    height: 110px;
+}
+.inbox img{
+    margin: 20px -75px 15px 123px;
+}
+.inbox a{
+    color: #898989;
+}
+.inbox a span{
+    color: #606060;
+    font-weight: 600;
+}
+.profiles{
+    float: left;
+    background-color: #EAEAEA;
+    margin: 0px 70px;
+    width: 150px;
+    height: 100px;
+}
+.profiles img{
+    margin: 20px -70px 22px 59px;
+}
+.profiles a{
+    color: #898989;
+}
+.people{
+    float: left;
+    background-color: #EAEAEA;
+    margin: -100px 235px;
+    width: 155px;
+    height: 100px;
+}
+.people img{
+    margin: 20px -82px 30px 59px;
+}
+.people a{
+    color: #898989;
+}
+table{
+    width: 100%;
+    margin-left: -250px;
+    border-bottom: rgb(54, 170, 190);
+    margin-right: 0px;
+    background-color: #fff;
+}
+.thead{
+    display: block;
+    background-color: rgb(223, 247, 255);
+    color: rgb(62, 155, 241);
+    border-bottom: none !important;
+    
+}
+.table table th:first-child{
+    background-color: rgb(62, 155, 241);
+    color: #fff;
+    font-weight: 400;
+}
+.table table th{
+   padding: 10px;
+   font-weight: 400;
+}
+.table table tr{
+    display:flex;
+    border-bottom: rgb(62, 155, 241) 1px solid;
+    height: 50px;
+    margin-top: 15px;
+    color: rgb(62, 155, 241);
+    width: 1097px;
+}
+.table table .rate{
+    margin-left: 424px;
+    margin-right: -424px;
+    float: right;
+    color: #898989;
+}
+.table table img{
+    margin-right: 15px;
+    margin-bottom: -10px;
+    margin-top: 5px;
+}
+.table table td{
+    width: 600px;
+}
+.table table p{
+    margin-top: 20px;
+}
+/*170128 lab2 part2*/
+.chat{
+    width: 75%;
+    margin: 0 auto;
+    margin-left: 20%;
+    padding: 5px;
+}
+.chat .head{
+    border-radius: 5px;
+    background-color: #17202B;
+    height: 50px;
+    color: #fff;
+    
+}
+.chat .head p{
+    font-size: 20px;
+    padding: 12px;
+    font-weight: 550;
+}
+.chat .chatting{
+    width: 99.5%;
+    height: 70vh;
+    border: #E7E7E7 1px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px #E7E7E7;
+}
+.chat .type{
+    width: 96%;
+    margin: 10px auto; 
+    height: 50px;
+    background-color: #EBEFF2;
+    border-radius: 5px;
+}
+.chat .left{
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.chat .right{
+    float: right;
+    display: flex;
+}
+.chat .right .emoj{
+    margin-right: 10px;
+    margin-top: 7px;
+
+}
+.chat .right .plane img{
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.chat .left1{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    float: left;
+    width: 50%;
+    display: flex;
+}
+.chat .left1 a{
+    margin-left: 40px;
+}
+.chat .left1 .p1{
+    width: 80%;
+    height: 80px;
+    background-color: #5895E8;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-left: 30px;
+
+}
+.chat .left1 .p3{
+    width: 60%;
+    height: 80px;
+    background-color: #5895E8;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-left: 30px;
+
+}
+.chat .left1 .p1 .triangle_left {
+	width: 1px;
+	height: 1px;
+	border-top: 5px solid transparent;
+	border-right: 20px solid #5895E8;
+	border-bottom: 10px solid transparent;
+    rotate: 20deg;
+    display:inline-block;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.chat .left1 .p3 .triangle_left {
+	width: 1px;
+	height: 1px;
+	border-top: 5px solid transparent;
+	border-right: 20px solid #5895E8;
+	border-bottom: 10px solid transparent;
+    rotate: 20deg;
+    display:inline-block;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.chat .left1 .p1 h4{
+    margin-top: -26px;
+    margin-left: 20px;
+    color: #fff;
+}
+.chat .left1 .p1 p{
+    margin-top: -15px;
+    margin-left: 20px;
+    color: #fff;
+}
+.chat .left1 .p3 h4{
+    margin-top: -26px;
+    margin-left: 20px;
+    color: #fff;
+}
+.chat .left1 .p3 p{
+    margin-top: -15px;
+    margin-left: 20px;
+    color: #fff;
+}
+.chat .right1{
+    float: right;
+    width: 50%;
+    margin-right: 0px;
+    margin-top: 150px;
+    margin-bottom: -60px;
+    display: flex;
+}
+.chat .right1 a{
+    margin-left: 20px;
+}
+.chat .right1 .p2{
+    width: 75%;
+    height: 80px;
+    background-color: #FC6D4C;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-left: 30px;
+
+}
+.chat .right1 .p4{
+    width: 60%;
+    height: 80px;
+    background-color: #FC6D4C;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-left: 110px;
+
+}
+.chat .right1 .p2 .triangle_right {
+	width: 1px;
+	height: 1px;
+	border-top: 10px solid transparent;
+	border-right: 25px solid #FC6D4C;
+	border-bottom: 10px solid transparent;
+    rotate: 150deg;
+    display:inline-block;
+    margin-top: 12px;
+    margin-left: 97%;
+}
+.chat .right1 .p4 .triangle_right {
+	width: 1px;
+	height: 1px;
+	border-top: 10px solid transparent;
+	border-right: 25px solid #FC6D4C;
+	border-bottom: 10px solid transparent;
+    rotate: 150deg;
+    display:inline-block;
+    margin-top: 12px;
+    margin-left: 97%;
+}
+.chat .right1 .p2 h4{
+    margin-top: -26px;
+    margin-right: 20px;
+    color: #fff;
+    float: right;
+}
+.chat .right1 .p2 p{
+    margin-top: 0px;
+    margin-right: -55px;
+    color: #fff;
+    float: right;
+}
+.chat .right1 .p4 h4{
+    margin-top: -26px;
+    margin-right: 20px;
+    color: #fff;
+    float: right;
+}
+.chat .right1 .p4 p{
+    margin-top: 0px;
+    margin-right: -55px;
+    color: #fff;
+    float: right;
+}

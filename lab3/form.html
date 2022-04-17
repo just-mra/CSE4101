@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm">
+        <label for="">Enter your name:</label>
+        <input type="text" id="name" onkeyup="myFunction()">
+        <br>
+        <label id="alert" for=""></label>
+        <br>
+        <label for="">Address</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <ul>
+            <li><input type="checkbox" id="1" value="Value1" />  vanilla</li>
+            <li><input type="checkbox" id="2" value="Value1" />  chocolate</li>
+            <li><input type="checkbox" id="3" value="Value1" />  mango</li>
+            <li><input type="checkbox" id="4" value="Value1" />  orange</li>
+        </ul>
+        
+
+        <button onclick="submit" > Submit</button>
+    </form>
+    <script>
+
+    function myFunction() {
+        var x = document.getElementById("name").value;
+        
+        x.value = x.toUpperCase();
+        a = x.split(" ");
+        for (var i=0; i<a.length; i++){
+            var caps = a[i].charAt(0).toUpperCase() + a[i].slice(1);
+            a[i] = caps;  
+        }
+        var name = a.join(" ");
+
+        document.getElementById("name").value = name;
+
+        if (a.length >= 3){
+            document.getElementById("alert").innerHTML = "";
+        }
+        else{
+            document.getElementById("alert").innerHTML = "At least two words!";
+        }
+        }
+   
+    var ul = document.querySelector("ul"), // get the list
+    temp = ul.cloneNode(true); // clone the list
+    console.log(ul);
+    // shuffle the cloned list
+    console.log(temp.children.length);
+    for (var i = temp.children.length + 1; i--; )
+    {
+        temp.appendChild( temp.children[Math.random() * i |0] );        
+        
+    }
+    ul.parentNode.replaceChild(temp, ul);
+    var listColor = function()
+    {
+
+        var list = document.getElementsByTagName("li");
+        for (i = 0; i < list.length; i++) 
+        {
+        if(i%2==0)
+            list[i].style="color:red";
+        else
+            list[i].style="color:blue";
+
+        }
+    }
+    listColor();
+        
+</script>
+</body>
+</html>
