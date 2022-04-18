@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="department">Department</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="department"
+                  name="department"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="roll">Roll</label>
+                <input type="text" class="form-control" id="roll" name="roll" />
+              </div>
+
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="faviceflv">Favorite Icecream flavor</label>
+                <div>
+                  <label for="chocolate" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="faviceflv"
+                      value="chocolate"
+                      id="chocolate"
+                    />Chocolate</label
+                  >
+                  <label for="vanila" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="faviceflv"
+                      value="vanila"
+                      id="vanila"
+                    />Vanila</label
+                  >
+                  <label for="mangolia" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="faviceflv"
+                      value="mangolia"
+                      id="mangolia"
+                    />Mangolia</label
+                  >
+
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="faviceflv"
+                      value="others"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="number">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  name="address"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="number">District</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="district"
+                  name="district"
+                />
+              </div>
+
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Abu Jafor Mohammad Saleh</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded mr-2" alt="..." />
+
+        <button
+          type="button"
+          class="ml-2 mb-1 close"
+          data-dismiss="toast"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
