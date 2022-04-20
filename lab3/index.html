@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab3</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <form method="post" name="myForm">
+                <div style="margin: 5px;">
+                    <p id="error_message"></p>
+                    <label for="name">Enter Name: </label><br>
+                    <input type="text" name="name" id="name" onkeyup="check_name()"><br>
+                    <!-- <button onclick="check_name()">Check</button> -->
+                </div>
+                <div style="margin: 5px;">
+                    <label for="address">Enter Address: </label><br>
+                    <textarea name="address" id="address" cols="100" rows="5"></textarea>
+                </div>
+                <div>
+                    <label for="">Favorite Teste</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> vanilla</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> chocolate</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> green tea</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> strawberry</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> mango </label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> mango </label>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function check_name() {
+            var name = document.myForm.name.value
+            var array = name.split(" ")
+            console.log(array.length)
+            for (let i = 1; i < array.length; i++) {
+                // var temp = array[i]
+                // var char = temp.charAt(0).toUpperCase()
+                // var rem = temp.slice(1)
+                // var _temp = char + rem
+                // array[i] = _temp
+                var char = array[i].charAt(0)
+                console.log(char)
+                if (isLowerCase(char)) {
+                    array[i].charAt(0) = array[i].charAt(0).toUpperCase()
+                }
+            }
+            name = array.join(" ")
+            document.getElementById('name').value = name
+
+            if (array.length <= 1) {
+                document.getElementById('error_message').innerHTML = 'Atleast 2 word required'
+            } else {
+                document.getElementById('error_message').innerHTML = ''
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
