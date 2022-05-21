@@ -1,0 +1,31 @@
+body{
+	padding: 20px;
+	background-color: lightgray ;
+}
+form{
+	margin-left: 500px;
+}
+.btn{
+	display: inline-block;
+	margin-left: 562px ;
+	margin-bottom:20px;
+}
+section{
+	margin-left: 500px;
+}
+#name{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	margin-left: 13px;
+}
+#address{
+	padding-bottom: 50px;
+	width: 200px ;
+}
+div:nth-child(even){
+	color: green ;
+}
+div:nth-child(odd){
+	color: red ;
+}
