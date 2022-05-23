@@ -1,0 +1,58 @@
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 30%;
+    background-color: mediumvioletred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 30%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+  .lform {
+    border-radius: 5px;
+    background-color: pink;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+  }
+
+  body {
+      background-color: lemonchiffon;
+      padding: 50px;
+  }
+
+  h1 {
+      text-align: center;
+      margin: 10px;
+  }
+
+
+  .rbutton {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    
+
+  }
