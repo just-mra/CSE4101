@@ -1,0 +1,159 @@
+*{
+  margin:0;padding:0
+}
+body{
+  background-color:#EEE8AE;
+}
+#wrapper{
+  width:960px;
+  margin:0px auto;
+}
+#header{
+  background-color:#E6FBEC;
+  padding:20px;
+  border-bottom:5px solid black;
+  height:100px;
+}
+.headerimg{
+  width:380px;
+  height:120px;
+  float:left;
+
+}
+.headerimg img{
+      border-radius: 34px;
+    width:112px;
+    height:95px;
+}
+.title{
+  width:535px;
+  height:120px;
+  float:left;
+  
+  
+}
+.title h2{
+  padding-top:30px;
+  float:left;
+  text-align:center;
+}
+#body{
+   background-color:#FFFFFF;
+  height:750px;
+   margin:0px;
+}
+
+.nav{
+   border:5px solid black;
+  width:200px;
+  height:741px;
+  float:left;
+  margin:0px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffffff;
+ 
+ height:380px;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: red;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  padding-left:50px;
+
+  color: red;
+}
+
+.menudetails{
+  margin:0px;
+width:715px;
+height:510px;
+float:left;
+
+}
+.coursenav ul{
+  height: 49px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #EBF8FD;
+}
+.coursenav ul li {
+  float: left;
+}
+
+.coursenav ul li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.coursenav ul li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.coursenav ul li a.active {
+  color: white;
+  background-color: #3C8FC4;
+}
+.profileimg{
+     width: 395px;
+    float: left;
+    height: 376px;
+    
+}
+.profileactivity {
+    width: 315px;
+    float: left;
+    height: 377px;
+    
+}
+.profileimg img{
+ padding: 28px 67px 16px 110px;
+    border-radius: 136px;
+}
+.profileimg p{
+  color:red;
+  padding-left:150px;
+}
+.inbox{
+margin-top:10px;
+     background-color: #EAEAEA;
+    padding-left: 140px;
+    margin-bottom: 20px;
+    text-decoration:none;
+    width:155px;
+}
+.seeting{
+     width: 83px;
+    float: left;
+    margin-right: 20px;
+    background-color: #EAEAEA;
+    padding-left: 52px;
+}
+.profile1 {
+        background-color: #EAEAEA;
+    float: left;
+    padding-left: 55px;
+    width: 88px;
+}
+
+.course p{
+  padding:22px;
+  color:#81AAC7;
+  border-bottom:1px solid #CFCFCF;
+}
