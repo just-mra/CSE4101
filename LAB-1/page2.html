@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #nav {
+            height: 150px;
+            background-color: #ccf2ff;
+            border: 3px solid black;
+        }
+
+        #img1,
+        #title,
+        h1 {
+            display: inline;
+        }
+
+        #title {
+            position: relative;
+            left: 350px;
+        }
+
+        #img1 {
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+
+        #sidebar,
+        #bodypart {
+            height: 430px;
+            width: 250px;
+            background-color: #ffffff;
+            border: 3px solid black;
+            display: inline-block;
+
+        }
+        #sidebar{
+            position: relative;
+            bottom: 163px;
+        }
+        #bodypart {
+            position: relative;
+            bottom: 3px;
+            width: 1235px;
+            background-color: #daba63;
+
+        }
+
+        #list,
+        .listitem {
+            list-style: none;
+        }
+
+        .formline {
+            position: relative;
+            left: 100px;
+        }
+
+        .name {
+            width: 50%;
+        }
+        .name2{
+            height: 100px;
+            width: 50%;
+
+        }
+        .button1{
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="img1"><img src="htmlscssjs.png" alt="htmlscssjs.png" height="50px" width="60px"></div>
+
+        <div id="title">
+            <h1 id="titleh1">Title of the website</h1>
+        </div>
+    </div>
+
+
+    <div id="sidebar">
+        <li id="list">
+            <ul class="listitem">Menu</ul>
+            <ul class="listitem">Home</ul>
+            <ul class="listitem">Portfolio</ul>
+            <ul class="listitem">CV</ul>
+            <ul class="listitem">Send Message</ul>
+        </li>
+    </div>
+
+    <div id="bodypart">
+        <br><br><br>
+        <div class="forms">
+            <div class="formline"><b>Name</b>&nbsp;&nbsp;&nbsp;<input type="text" class="name">
+            </div>
+        </div> <br><br>
+        <div class="forms">
+            <div class="formline"><b>Email:</b>&nbsp;&nbsp;&nbsp;<input type="text" class="name">
+            </div>
+        </div>
+        <br> <br>
+        <div class="forms">
+            <div class="formline"><b>MSG:</b>&nbsp;&nbsp;&nbsp;<input type="text" class="name2">
+            </div>
+        </div>
+        <br><br>
+        <div class="formline">
+            <div><button id="button1">Send</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
