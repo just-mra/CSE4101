@@ -1,0 +1,184 @@
+#nav {
+    height: 100px;
+    background-color: #ccf2ff;
+    border: 3px solid black;
+}
+
+#img1,
+#title,
+h1 {
+    display: inline;
+}
+
+#title {
+    position: relative;
+    left: 350px;
+}
+
+#img1 {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+#sidebar,
+#bodypart {
+    height: 700px;
+    width: 250px;
+    background-color: #ffffff;
+    border: 3px solid black;
+    display: inline-block;
+    position: relative;
+    bottom: 690px;
+}
+
+#bodypart {
+    position: relative;
+    top: 0px;
+    width: 78.5%;
+    border: none;
+    height: 250px;
+
+}
+
+#bodya {
+    position: relative;
+    left: 30px;
+    height: 250px;
+    
+}
+
+
+
+#list,
+.listitem,
+.menured {
+    list-style: none;
+}
+
+.menured {
+    color: red;
+    text-decoration: none;
+}
+
+#mediv {
+    height: 400px;
+    width: 40%;
+    display: inline;
+}
+
+#rightgrp {
+    height: 200px;
+    width: 22%;
+    position: relative;
+    bottom: 158px;
+    left: 75%;
+}
+
+#me {
+    border-radius: 50%;
+    position: relative;
+    left: 15%;
+}
+
+.name {
+
+    position: relative;
+    left: 12%;
+}
+
+#email {
+    position: relative;
+
+    left: 10%;
+    width: 200px;
+    margin: 0px;
+
+}
+
+#country {
+    position: relative;
+    margin: 0px;
+    margin-right: 0px;
+    width: 100px;
+
+    left: 15%;
+}
+#inbox , #inboximg , #right , #left {
+    position: relative;
+    background-color: #eaeaea;
+
+}
+
+#inbox {
+    height: 100px;
+    width: 200px;
+    left: 6px;
+}
+
+#inboximg {
+
+    left: 25%;
+}
+
+#right {
+    display: inline-block;
+    left: 6px;
+    height: 99px;
+    top: 3px;
+}
+
+#left {
+    display: inline-block;
+    left: 3px;
+    height: 99px;
+    top: 3px;
+}
+#pro{
+    position: relative;
+    height: 99px;
+}
+
+#lowerbar {
+    background-color: #aae2f5;
+    display: block;
+    padding: 20px;
+    padding-left: 0%;
+    position: relative;
+    bottom: 160px;
+}
+
+#question , #course , #answer {
+    padding: 20px;
+    display: inline;
+}
+#course {
+    background-color: #7cd8f7;
+}
+#coursecontent{
+    padding: 20px;
+    position: relative;
+    height: 362px;
+    bottom: 160px;
+}
+#bar{
+    margin-right: 39px;
+    position: relative;
+    bottom: 35px;
+}
+.bookimg , .anatomy , .rate , .bookbar{
+    display: inline;
+    position: relative;
+
+}
+.bookimg{
+    top: 18px;
+}
+
+.anatomy{
+    color: #7cd8f7;
+}
+.rate{
+    left: 43%;
+}
+
