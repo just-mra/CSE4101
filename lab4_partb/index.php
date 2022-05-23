@@ -1,6 +1,6 @@
 <html>  
     <head>  
-        <title>PHP Ajax Crud using JQuery UI Dialog Box</title>  
+        <title>Form</title>  
 		<link rel="stylesheet" href="jquery-ui.css">
         <link rel="stylesheet" href="bootstrap.min.css" />
 		<script src="jquery.min.js"></script>  
@@ -10,7 +10,7 @@
         <div class="container">
 			<br />
 			
-			<h3 align="center">PHP Ajax Crud using JQuery UI Dialog</a></h3><br />
+			<h3 align="center">Form</a></h3><br />
 			<br />
 			<div align="right" style="margin-bottom:5px;">
 			<button type="button" name="add" id="add" class="btn btn-success btn-xs">Add</button>
