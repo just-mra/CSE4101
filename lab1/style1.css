@@ -1,0 +1,73 @@
+.title{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+header{
+    display: flex;
+    border: 5px solid black;
+    background-color: azure;
+}
+img{
+    height: 15%;
+    width: 15%;
+    padding: 15px;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.nav{
+    width: 20%;
+    padding: 25px;
+    border: 5px solid black;
+    border-top: 0px;
+    
+    
+}
+.link2{
+    padding-top: 550px;
+    padding-left: 20px;
+    padding: 10px;
+    text-align: left;
+    background: lightseagreen;
+    width: 100%;
+    
+    
+}
+#menu{
+    padding-left: 20px;
+
+}
+.container a{
+    text-decoration: none;
+    display: block;
+    color: darkred;
+    padding: 7px 0px;
+
+
+}
+.filed{
+    padding: 20px 0px 0px 20px;
+    width: 20%;
+    float: left;
+}
+.form{
+    width: 75%;
+    float: right;
+    padding: 30px 0px 0px 0px;
+
+}
+button{
+    margin-left: 180px;
+    background: lightblue;
+    color: darkolivegreen;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+input{
+    width: 306px;
+}
+
