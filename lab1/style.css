@@ -1,0 +1,57 @@
+.head{
+
+    text-align: center;
+    border: 8px solid black;
+    padding: 30px;
+    margin-bottom: 1.5%;
+    background-color: aquamarine;
+    
+}
+
+.bd 
+{
+    display: flex;
+    align-items: center;
+}
+.b{
+    margin-left: 380px;
+    font-size: 25px;
+
+}
+.m{
+    padding-left: 15px;
+}
+
+.logo{
+    width: 10%;
+    float: left;
+    
+}
+.lft 
+{
+    border: 4px solid black;
+    padding-bottom: 23%;
+    margin-top: -2%;
+    margin-right: %;
+    padding-right: 8%;
+    padding-left: 2%;
+    color: red;
+}
+
+.hd
+{
+    color: green;
+}
+.container{
+    display: flex;
+    
+}
+.d{
+    background-color: goldenrod;
+    margin-top: -1.5%;
+    
+}
+.tx{
+    padding-left: 8%;
+    padding-top: 5%;
+}
