@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  	<title>User Data</title>
+
+  	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	
+  	<!-- Page CSS -->
+  	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+  
+<body>
+
+	<section class="container pt-3">
+
+		<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Add User</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+		  <div class="modal-dialog modal-lg">
+		  
+			<!-- Modal content-->
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  <div class="modal-body">
+				<form action="save.php" id="form">
+			    	<div class="row p-3">
+						<div class="col-6">
+							<div class="row">
+								<div class="col-6 form-group">
+									<label for="first_name">First Name</label>
+									<input class="form-control" type="text" name="first_name">
+								  </div>
+								  <div class="col-6 form-group">
+									<label for="last_name">Last Name</label>
+									<input class="form-control" type="text" name="last_name">
+								  </div>
+							</div>
+				  	
+				  	
+					<div class="form-group">
+						<label for="gender">Gender</label><br>
+						<input class="mr-2" type="radio" name="gender" value="Male">
+						<label>Male</label>
+						<input class="mr-2" type="radio" name="gender" value="Female">
+						<label>Female</label>
+						<input type="radio" name="gender" value="Others">
+						<label>Others</label>
+					</div>
+					<div class="form-group">
+						<label for="district">District: </label>
+						<select name="district" class="form-control" required>
+							<option value="Bagerhat">Bagerhat</option>
+							<option value="Bandarban">Bandarban</option>
+							<option value="Barguna">Barguna</option>
+							<option value="Barisal">Barisal</option>
+							<option value="Bhola">Bhola</option>
+							<option value="Bogra">Bogra</option>
+							<option value="Brahmanbaria">Brahmanbaria</option>
+							<option value="Chandpur">Chandpur</option>
+							<option value="Chittagong">Chittagong</option>
+							<option value="Chuadanga">Chuadanga</option>
+							<option value="Comilla">Comilla</option>
+							<option value="Cox'sBazar">Cox'sBazar</option>
+							<option value="Dhaka">Dhaka</option>
+							<option value="Dinajpur">Dinajpur</option>
+							<option value="Faridpur">Faridpur</option>
+							<option value="Feni">Feni</option>
+							<option value="Gaibandha">Gaibandha</option>
+							<option value="Gazipur">Gazipur</option>
+							<option value="Gopalganj">Gopalganj</option>
+							<option value="Habiganj">Habiganj</option>
+							<option value="Jaipurhat">Jaipurhat</option>
+							<option value="Jamalpur">Jamalpur</option>
+							<option value="Jashore">Jashore</option>
+							<option value="Jhalokati">Jhalokati</option>
+							<option value="Jhenaidah">Jhenaidah</option>
+							<option value="Khagrachari">Khagrachari</option>
+							<option value="Khulna">Khulna</option>
+							<option value="Kishoreganj">Kishoreganj</option>
+							<option value="Kurigram">Kurigram</option>
+							<option value="Kushtia">Kushtia</option>
+							<option value="Lakshmipur">Lakshmipur</option>
+							<option value="Lalmonirhat">Lalmonirhat</option>
+							<option value="Madaripur">Madaripur</option>
+							<option value="Magura">Magura</option>
+							<option value="Manikganj">Manikganj</option>
+							<option value="Maulvibazar">Maulvibazar</option>
+							<option value="Meherpur">Meherpur</option>
+							<option value="Munshiganj">Munshiganj</option>
+							<option value="Mymensingh">Mymensingh</option>
+							<option value="Naogaon">Naogaon</option>
+							<option value="Narail">Narail</option>
+							<option value="Narayanganj">Narayanganj</option>
+							<option value="Narsingdi">Narsingdi</option>
+							<option value="Natore">Natore</option>
+							<option value="Nawabganj">Nawabganj</option>
+							<option value="Netrokona">Netrokona</option>
+							<option value="Nilphamari">Nilphamari</option>
+							<option value="Noakhali">Noakhali</option>
+							<option value="Pabna">Pabna</option>
+							<option value="Panchagarh">Panchagarh</option>
+							<option value="Patuakhali">Patuakhali</option>
+							<option value="Pirojpur">Pirojpur</option>
+							<option value="Rajbari">Rajbari</option>
+							<option value="Rajshahi">Rajshahi</option>
+							<option value="Rangamati">Rangamati</option>
+							<option value="Rangpur">Rangpur</option>
+							<option value="Satkhira">Satkhira</option>
+							<option value="Shariatpur">Shariatpur</option>
+							<option value="Sherpur">Sherpur</option>
+							<option value="Sirajganj">Sirajganj</option>
+							<option value="Sunamganj">Sunamganj</option>
+							<option value="Sylhet">Sylhet</option>
+							<option value="Tangail">Tangail</option>
+							<option value="Thakurgaon">Thakurgaon</option>
+						</select>
+					</div>
+
+				  	<div class="form-group">
+					    <label for="address">Address</label>
+					    <textarea class="form-control" type="text" name="address" rows="3"></textarea>
+				  	</div>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6 form-group">
+								<label for="dept">Department:</label>
+								<select class="form-control" name="dept" required>
+									<option value="CSE">CSE</option>
+									<option value="EEE">EEE</option>
+									<option value="IPE">IPE</option>
+									<option value="PME">PME</option>
+									<option value="ChE">ChE</option>
+									<option value="BME">BME</option>
+									<option value="Civil">Civil</option>
+									<option value="ICE">ICE</option>
+								</select>
+							</div>
+							<div class="col-6 form-group">
+								<label  for="roll">Roll:</label>
+								<input class="form-control" type="text" id="roll" name="roll" required>
+							</div>
+						</div>
+					
+					
+					<div class="form_group">
+                        <label for="tel">Phone Number:</label>
+                        <input class="form-control" type="tel" id="tel" name="tel" required>
+                    </div>
+					<div class="form-group">
+					    <br><label for="email">Email</label>
+					    <input class="form-control" type="text" name="email">
+				  	</div>
+					  <div>
+						<label for="dept">Ice Cream Flavor:</label>
+						<div class="row">
+							<div class="col-6">
+								<input type="checkbox" id="chokobar" name="flavour[]" value="Chokobar">
+								<label for="chokobar">Chokobar</label><br>
+								<input  type="checkbox" id="choklate" name="flavour[]" value="Choklate">
+								<label for="choklate">Choklate:</label><br>
+								<input type="checkbox" id="banana" name="flavour[]" value="Banana">
+								<label for="bananar">Banana</label>
+							</div>
+							<div class="col-6">
+							
+								<input  type="checkbox" id="neopolitan" name="flavour[]" value="Neopolitan">
+								<label for="neopolitan">Neopolitan</label><br>
+								<input  type="checkbox" id="raspberry" name="flavour[]" value="Raspberry">
+								<label for="raspberry">Raspberry</label><br>
+								<input  type="checkbox" id="vanila" name="flavour[]" value="Vanila">
+								<label for="vanila">Vanila</label><br>
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					
+				  	<button type="button" class="btn btn-primary" id="btnSubmit">Submit</button>
+					<button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
+				</form>
+			  </div>
+			  
+			</div>
+			
+		  </div>
+		</div>
+	</section>
+   
+	<div class="container pt-1">
+	    
+	    <div class="row">
+	    	<div class="col-md-12">
+				<table class="table">
+					<thead>
+					  <tr>
+						<th>Name</th>
+						<th>Department</th>
+						<th>Roll</th>
+						<th>Gender</th>
+						<th>Email</th>
+						<th>Phone</th>
+						<th>Ice Creame</th>
+						<th>Address</th>
+						<th>Action</th>
+					  </tr>
+					</thead>
+					<tbody id="user-list">
+						
+					</tbody>
+				</table>
+				
+	    	</div>
+	    </div>
+	</div>
+
+	<!-- The Modal -->
+	<div class="modal" id="edit-employee-modal">
+	  	<div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+
+		      	<!-- Modal Header -->
+		      	<div class="modal-header">
+			        <h4 class="modal-title">Edit User Information</h4>
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		      	</div>
+
+		      	<!-- Modal body -->
+		      	<div class="modal-body">
+		        	<form action="update.php" id="edit-form">
+		        		<input class="form-control" type="hidden" name="id">
+				    	<div class="row p-3">
+							<div class="col-6">
+								<div class="row">
+									<div class="col-6 form-group">
+										<label for="first_name">First Name</label>
+										<input class="form-control" type="text" name="first_name">
+									  </div>
+									  <div class="col-6 form-group">
+										<label for="last_name">Last Name</label>
+										<input class="form-control" type="text" name="last_name">
+									  </div>
+								</div>
+						  
+						  
+						<div class="form-group">
+							<label for="gender">Gender</label><br>
+							<input class="mr-2" type="radio" name="gender" >
+							<label>Male</label>
+							<input class="mr-2" type="radio" name="gender">
+							<label>Female</label>
+							<input type="radio" name="gender">
+							<label>Others</label>
+						</div>
+						<div class="form-group">
+							<label for="district">District: </label>
+							<select name="district" class="form-control" required>
+								<option value="Bagerhat">Bagerhat</option>
+								<option value="Bandarban">Bandarban</option>
+								<option value="Barguna">Barguna</option>
+								<option value="Barisal">Barisal</option>
+								<option value="Bhola">Bhola</option>
+								<option value="Bogra">Bogra</option>
+								<option value="Brahmanbaria">Brahmanbaria</option>
+								<option value="Chandpur">Chandpur</option>
+								<option value="Chittagong">Chittagong</option>
+								<option value="Chuadanga">Chuadanga</option>
+								<option value="Comilla">Comilla</option>
+								<option value="Cox'sBazar">Cox'sBazar</option>
+								<option value="Dhaka">Dhaka</option>
+								<option value="Dinajpur">Dinajpur</option>
+								<option value="Faridpur">Faridpur</option>
+								<option value="Feni">Feni</option>
+								<option value="Gaibandha">Gaibandha</option>
+								<option value="Gazipur">Gazipur</option>
+								<option value="Gopalganj">Gopalganj</option>
+								<option value="Habiganj">Habiganj</option>
+								<option value="Jaipurhat">Jaipurhat</option>
+								<option value="Jamalpur">Jamalpur</option>
+								<option value="Jashore">Jashore</option>
+								<option value="Jhalokati">Jhalokati</option>
+								<option value="Jhenaidah">Jhenaidah</option>
+								<option value="Khagrachari">Khagrachari</option>
+								<option value="Khulna">Khulna</option>
+								<option value="Kishoreganj">Kishoreganj</option>
+								<option value="Kurigram">Kurigram</option>
+								<option value="Kushtia">Kushtia</option>
+								<option value="Lakshmipur">Lakshmipur</option>
+								<option value="Lalmonirhat">Lalmonirhat</option>
+								<option value="Madaripur">Madaripur</option>
+								<option value="Magura">Magura</option>
+								<option value="Manikganj">Manikganj</option>
+								<option value="Maulvibazar">Maulvibazar</option>
+								<option value="Meherpur">Meherpur</option>
+								<option value="Munshiganj">Munshiganj</option>
+								<option value="Mymensingh">Mymensingh</option>
+								<option value="Naogaon">Naogaon</option>
+								<option value="Narail">Narail</option>
+								<option value="Narayanganj">Narayanganj</option>
+								<option value="Narsingdi">Narsingdi</option>
+								<option value="Natore">Natore</option>
+								<option value="Nawabganj">Nawabganj</option>
+								<option value="Netrokona">Netrokona</option>
+								<option value="Nilphamari">Nilphamari</option>
+								<option value="Noakhali">Noakhali</option>
+								<option value="Pabna">Pabna</option>
+								<option value="Panchagarh">Panchagarh</option>
+								<option value="Patuakhali">Patuakhali</option>
+								<option value="Pirojpur">Pirojpur</option>
+								<option value="Rajbari">Rajbari</option>
+								<option value="Rajshahi">Rajshahi</option>
+								<option value="Rangamati">Rangamati</option>
+								<option value="Rangpur">Rangpur</option>
+								<option value="Satkhira">Satkhira</option>
+								<option value="Shariatpur">Shariatpur</option>
+								<option value="Sherpur">Sherpur</option>
+								<option value="Sirajganj">Sirajganj</option>
+								<option value="Sunamganj">Sunamganj</option>
+								<option value="Sylhet">Sylhet</option>
+								<option value="Tangail">Tangail</option>
+								<option value="Thakurgaon">Thakurgaon</option>
+							</select>
+						</div>
+	
+						  <div class="form-group">
+							<label for="address">Address</label>
+							<textarea class="form-control" type="text" name="address" rows="3"></textarea>
+						  </div>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-6 form-group">
+									<label for="dept">Department:</label>
+									<select class="form-control" name="dept" required>
+										<option value="CSE">CSE</option>
+										<option value="EEE">EEE</option>
+										<option value="IPE">IPE</option>
+										<option value="PME">PME</option>
+										<option value="ChE">ChE</option>
+										<option value="BME">BME</option>
+										<option value="Civil">Civil</option>
+										<option value="ICE">ICE</option>
+									</select>
+								</div>
+								<div class="col-6 form-group">
+									<label  for="roll">Roll:</label>
+									<input class="form-control" type="text" id="roll" name="roll" required>
+								</div>
+							</div>
+						
+						
+						<div class="form_group">
+							<label for="tel">Phone Number:</label>
+							<input class="form-control" type="tel" id="tel" name="tel" required>
+						</div>
+						<div class="form-group">
+							<br><label for="email">Email</label>
+							<input class="form-control" type="text" name="email">
+						  </div>
+						  <div>
+							<label for="dept">Ice Cream Flavor:</label>
+							<div class="row">
+								<div class="col-6">
+									<input type="checkbox" id="chokobar" name="flavour[]" value="Chokobar">
+									<label for="chokobar">Chokobar</label><br>
+									<input  type="checkbox" id="choklate" name="flavour[]" value="Choklate">
+									<label for="choklate">Choklate:</label><br>
+									<input type="checkbox" id="banana" name="flavour[]" value="Banana">
+									<label for="bananar">Banana</label>
+								</div>
+								<div class="col-6">
+								
+									<input  type="checkbox" id="neopolitan" name="flavour[]" value="Neopolitan">
+									<label for="neopolitan">Neopolitan</label><br>
+									<input  type="checkbox" id="raspberry" name="flavour[]" value="Raspberry">
+									<label for="raspberry">Raspberry</label><br>
+									<input  type="checkbox" id="vanila" name="flavour[]" value="Vanila">
+									<label for="vanila">Vanila</label><br>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					  	<button type="button" class="btn btn-primary" id="btnUpdateSubmit">Update</button>
+					  	<button type="button" class="btn btn-danger float-right" data-dismiss="modal">Close</button>
+					</form>
+
+
+		      	</div>
+
+		    </div>
+	  	</div>
+	</div>
+
+
+	<!-- Must put our javascript files here to fast the page loading -->
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- Page Script -->
+	<script src="assets/js/scripts.js"></script>
+
+</body>
+  
+</html>
