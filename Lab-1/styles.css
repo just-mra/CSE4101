@@ -1,0 +1,82 @@
+.hbody {
+    background-color: rgb(255, 168, 61);
+    margin-left: 206px;
+    margin-top: -725px;
+    height: 700px;
+}
+
+.th1 {
+    background-color: aquamarine;
+    border-style: solid;
+    width: 100%;
+    
+    height: 200px;
+}
+
+.hlist {
+    border-style: solid;
+    width: 200px;
+    height: 700px;
+    list-style: none;
+}
+h2 {
+    color: green;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+img {
+    padding: 10px 10px 10px 10px;
+    
+}
+
+li {
+    color: red;
+   padding-top: 20px;
+    font-size: 14pt;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+#n {
+    
+    margin-left: 30px;
+    width: 80%;
+    height: 40px;
+}
+
+#em {
+    margin-top: 50px;
+    margin-left: 32px;
+    height: 40px;
+    width: 80%;
+}
+
+#msg {
+    margin-top: 50px;
+    margin-left: 37px;
+    height: 200px;
+    width: 80%;
+}
+
+button {
+    color: green;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: red;
+    padding: 7px;
+    margin-left: 45%;
+    margin-top: 30px;
+}
