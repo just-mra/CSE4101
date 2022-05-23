@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+      <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Mobile Number</th>
+      </tr>
+      
+      {% for d in data %}
+      <tr id="row1">
+      <td id="name_row1">{{d.firstName}}</td>
+      <td id="country_row1">{{d.lastName}}</td>
+      <td id="age_row1">{{d.number}}</td>
+      <td>
+      <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('{{ forloop.counter }}')">
+      <input type="button" value="Delete" class="delete" onclick="delete_row('{{ forloop.counter }}')">
+      </td>
+      </tr>
+      {% endfor %}
+      
+      </table>
+      </div>
+      <script>
+        function edit_row(no)
+          {
+          document.getElementById("edit_button"+no).style.display="none";
+          document.getElementById("save_button"+no).style.display="block";
+            
+          var name=document.getElementById("name_row"+no);
+          var country=document.getElementById("country_row"+no);
+          var age=document.getElementById("age_row"+no);
+            
+          var name_data=name.innerHTML;
+          var country_data=country.innerHTML;
+          var age_data=age.innerHTML;
+            
+          name.innerHTML="<input type='text' id='name_text"+no+"' value='"+name_data+"'>";
+          country.innerHTML="<input type='text' id='country_text"+no+"' value='"+country_data+"'>";
+          age.innerHTML="<input type='text' id='age_text"+no+"' value='"+age_data+"'>";
+          }
+
+          function delete_row(no)
+          {
+          document.getElementById("row"+no+"").outerHTML="";
+          }
+      </script>
+  </body>
+</html>

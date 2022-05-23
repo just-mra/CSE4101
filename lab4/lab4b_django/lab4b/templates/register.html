@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body">
+            <form method="POST">
+              {% csrf_token %}
+              {% for f in form %}
+              {{ f.label_tag }}{{ f }}
+              <br>
+              <br>
+              {% endfor %}
+              <button type="submit"> Submit </button>
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Abu Jafor Mohammad Saleh</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
