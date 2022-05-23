@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+.header{
+    border: 3px solid #000;
+    padding: 20px;
+    background-color: #E6FBEC;
+    
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.headerleftcolumn {   
+    float: left;
+    width: 25%;
+  }
+  
+  /* Right column */
+  .headerrightcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+    
+  }
+
+.headerrightcolumn h1{
+      text-align: center;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.navbar {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 550px;
+    border: 3px solid #000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar li {
+    font-size: 25px;
+    padding: 10px 10px;
+  }
+
+  .navbar li a{
+    color: #ff0000;
+    display: block;
+    text-decoration: none;
+  }
+
+  .navbar li:first-child{
+      padding-left: 30px;
+  }
+
+  .navbar li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .contentBar{
+      width: 80%;
+      display: block;
+      float: left;
+      margin-top: 20px;
+  }
+ 
+
+  /* profile design*/
+  .leftProfile {
+      width: 60%;
+      margin: auto;
+    display: block;
+    text-align: center;
+    font-family: arial;
+    float: left;
+  }
+
+  .leftProfile img{
+      border: 2px solid #000;
+      border-radius: 50%;
+  }
+
+  .rightProfile{
+      width: 40%;
+      margin: auto;
+      display: inline-block;
+      
+  }
+
+  .topRightProfile{
+    width: 90%;
+    height: 150px;
+    
+    color: #fff;
+    background-color: gray;
+    margin: auto;
+  }
+
+  .topRightProfile i{
+    height: 50px;
+    width: 50px;
+    color: #000;
+  }
+
+
+  .bottomRightProfile{
+    width: 90%;
+    height: 150px;
+    color: #fff;
+    background-color: gray;
+    margin: auto;
+  }
+
+  .bottomLeftProfile{
+    width: 40%;
+    display: block;
+    float: left;
+    background-color: #000;
+    margin-right: 10px;
+  }
+  
+  .bottomRightProfile{
+    display: block;
+    background-color: #ff0000;
+    margin-right: 10px;
+  }
+  
+  .info {
+      margin: 0;
+      padding: 0;
+    color: grey;
+    font-size: 15px;
+  }
+  
+  .contentHeader{
+    width: 80%;
+  display: block;
+  font-family: arial;
+  float: left;
+  }
+.contentHeaderNav{
+    margin: 10px;
+}
+  .contentHeaderNav ul{
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    background-color: #EBF7FF;
+  }
+
+  .contentHeaderNav ul li{
+      margin: 5px;
+      padding: 5px;
+      display: inline-block;
+      
+  }
+  .active{
+    color: #fff;
+    background-color: #3A8EC6;
+  }
+
+  .contentBody{
+    width: 90%;
+  display: block;
+  margin: auto;
+  float: left;
+  }

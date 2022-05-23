@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+.header{
+    border: 3px solid #000;
+    padding: 20px;
+    background-color: #E6FBEC;
+    
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.headerleftcolumn {   
+    float: left;
+    width: 25%;
+  }
+  
+  /* Right column */
+  .headerrightcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+    
+  }
+
+.headerrightcolumn h1{
+      text-align: center;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.navbar {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 550px;
+    border: 3px solid #000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar li {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+
+  .navbar li a{
+    color: #ff0000;
+    display: block;
+    text-decoration: none;
+  }
+
+  .navbar li:first-child{
+      padding-left: 30px;
+  }
+
+  .navbar li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .contentBar{
+    width: 80%;
+    height: 550px;
+    display: block;
+    float: left;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 30px;
+    background-color: #EFE4B0;
+  }
+
+  h1{
+      font-weight: bold;
+      color: #22B14B;
+      pad: 0 30px;
+  }
+P{
+    margin: 0;
+    padding: 0;
+}
+  .paragraph1{
+      font-weight: bold;
+      
+  }
+  .paragraph2{
+      font-style: italic;
+  }
