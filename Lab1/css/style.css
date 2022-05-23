@@ -1,0 +1,60 @@
+
+header {
+  background-color: aquamarine;
+}
+
+.first{
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
+}
+
+.first img {
+  padding: 38px;
+}
+
+.first h3 {
+  display: inline;
+}
+.wrapper {
+  display: flex;
+  height: 500px;
+}
+
+.titlebar{
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  
+}
+
+
+.l1 {
+  border: 2px solid black;
+  width: 20%;
+  padding: 20px;
+}
+
+.l1 ul li {
+  list-style: none;
+  padding: 10px;
+}
+.l1 ul li a {
+  
+  color: black;
+  text-decoration: none;
+}
+.mnu a{
+  padding-left: 14px;
+}
+
+.r1 {
+  background-color: goldenrod;
+  width: 79%;
+  padding: 79px 31px;
+}
+.head {
+  color: rgb(36, 151, 36);
+  padding-bottom: 19px;
+}
