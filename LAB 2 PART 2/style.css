@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(230, 251, 236);
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+header img {
+    float: left;
+    height: 100px;
+    width: 150px;
+}
+
+nav {
+    border: 2px solid black;
+    float: left;
+    width: 20%;
+    height: 800px;
+    /* only for demonstration, should be removed */
+    background: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li:first-child {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+article {
+    float: left;
+    width: 80%;
+    background-color: green;
+    height: 800px;
+    padding: 20px;
+}
+
+.content {
+    float: left;
+    width: 80%;
+    height: 800px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.profile_img {
+    width: 50%;
+    float: left;
+}
+
+.profile_image {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile_settings {
+    width: 50%;
+    float: left;
+}
+
+.setting_card {
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    padding: 5px;
+}
+
+.tab_bar {
+    height: 50px;
+    background-color: rgb(235, 247, 255);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.tab_bar ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+.tab_bar ul li {
+    float: left;
+    width: 120px;
+}
+
+.tab_bar ul li:first-child {
+    background-color: rgb(122, 166, 204);
+    height: 50px;
+}
+
+.tab_bar ul li a {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.single_row {
+    overflow: hidden;
+    text-align: center;
+}
+
+.single_row img {
+    height: 40px;
+    width: 40px;
+}
+
+.chat_text {
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.chat_another {
+    overflow: hidden;
+    padding: 15px;
+    float: left;
+    width: 100%;
+}
+
+.chat_another img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.chat_another_info {
+    float: left;
+    background-color: rgb(90, 153, 238);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.chat_own {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    float: right;
+}
+
+.chat_own img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 10px;
+}
+
+.chat_own_info {
+    float: right;
+    background-color: rgb(252, 109, 76);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.input_form {
+    overflow: hidden;
+    height: 80px;
+    background-color: rgb(235, 239, 242);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.input_form img {
+    float: left;
+    height: 40px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.input_form_send {
+    float: right;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.input_form_send img {
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}

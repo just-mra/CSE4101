@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.main {
+  width: 500px;
+  margin: 100px auto 0px auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+div.reg {
+  background-color: #3f4245;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #16d559;
+  box-shadow: 2px 2px 15px rgb(176, 12, 152);
+  color: white;
+}
+
+form {
+  margin: 45px;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+input {
+  width: 300px;
+  border: 2px solid #8cab10;
+  outline: 1px;
+  padding: 6px;
+  background-color: rgb(52, 82, 125);
+  box-shadow: inset 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+
+input#submit {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(150, 21, 197);
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: grab;
+  border: 1px groove rgb(12, 12, 12);
+}
+
+.dept{
+  
+  background-color: rgb(52, 82, 125);
+  padding-left: 30px;
+
+}
