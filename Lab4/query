@@ -1,0 +1,16 @@
+
+//please first create  a database with name formdatabase then put the following query
+CREATE TABLE `registration` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(200) NOT NULL,
+  `lname` varchar(50) NOT NULL,
+  `departments` varchar(100) NOT NULL,
+  `roll` int(100) NOT NULL,
+  `gender` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `mnumber` int(50) NOT NULL,
+  `flavor` varchar(30) NOT NULL,
+  `address` varchar(500) NOT NULL,
+  `district` varchar(50) NOT NULL
+) 
+
