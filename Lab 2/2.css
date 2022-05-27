@@ -1,0 +1,116 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 768px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .right {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: none;
+  padding: 8px;
+}
+
+
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+* {
+  font-family: 'Avenir';
+}
+.bubbleWrapper {
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+  color: #fff;
+}
+.inlineContainer {
+  display: inline-flex;
+}
+.inlineContainer.own {
+  flex-direction: row-reverse;
+}
+.inlineIcon {
+  width:20px;
+  object-fit: contain;
+}
+.ownBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+  margin: 6px 8px;
+	background-color: #5b5377;
+	border-radius: 16px 16px 0 16px;
+	border: 1px solid #443f56;
+ 
+}
+.otherBubble {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+  margin: 6px 8px;
+	background-color: #6C8EA4;
+	border-radius: 16px 16px 16px 0;
+	border: 1px solid #54788e;
+  
+}
+.own {
+	align-self: flex-end;
+}
+.other {
+	align-self: flex-start;
+}
+span.own,
+span.other{
+  font-size: 14px;
+  color: grey;
+}
+   
